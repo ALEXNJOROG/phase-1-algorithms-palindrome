@@ -1,11 +1,25 @@
-function isPalindrome(word) {
-  // Write your algorithm here
-}
+function isPalindrome(str) {
+  // function to check if string is palindrom
+
 
 /* 
-  Add your pseudocode here
+ convert input to lowercase
+ reverse the string
+ compare string to the reversed string
 */
+let tmp = str.toLowerCase();
+let str1 = tmp.split("");
+str1 = str1.reverse();
+let str2 = str1.join("")
+if (tmp===str2){
 
+  return true;
+}
+else{
+  return false;
+}
+}
+  
 /*
   Add written explanation of your solution here
 */
